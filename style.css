@@ -20,10 +20,6 @@ time, mark, audio, video, main, input, button {
 *::before,*::after{
 	box-sizing: border-box;
 }
-article, aside, details, figcaption, figure,  
-footer, header, hgroup, menu, nav, section, main {
-	display: block;
-}   
 img, svg {
     height: auto;
     -webkit-transform: translate3d(0,0,0);
@@ -38,19 +34,10 @@ img, svg {
     -o-transition: all 0.1s ease 0s;
     transition: all 0.1s ease 0s;
 }
-
-.videoBlock svg{
-	transition: all 0.2s ease 0s;
-	will-change: transform;
-}
-.videoBlock svg:hover{
-	transform: scale(1.05);
-	 cursor: pointer;
-}
-.videoBlock video{
-	object-fit: cover;
-    object-position: center;
-}
+article, aside, details, figcaption, figure,  
+footer, header, hgroup, menu, nav, section, main {
+	display: block;
+}    
 html{
 	font-family: 'Helvetica';
 	overflow-x: hidden;
@@ -121,7 +108,7 @@ svg{
 }
 .main{
 	flex-grow: 1;
-	overflow-x: hidden;
+	/* overflow-x: hidden; */
 }
 .header{
 	background: rgba(9, 9, 9, 0.5);
@@ -442,7 +429,7 @@ svg{
 	width: 46.875em;
 }
 .sec2__content{
-	padding: 0 2.3em 0 4.6em;
+	padding: 0 2.6em 0 4.6em;
 }
 .sec2__title{
 	font-weight: 700;
@@ -481,6 +468,11 @@ svg{
 	display: flex;
 	justify-content: space-between;
 }
+.sec3__title{
+	font-size: 2.815em;
+	margin-bottom: 0.355em;
+	text-align: left;
+}
 .sec3__topLeft{
 	width: 50%;  
 	padding-top: 3.7em;
@@ -508,7 +500,7 @@ svg{
 	padding-top: 3.725em;
 	padding-bottom: 3.3375em;
 	padding-left: 3.95%;
-	
+	padding-right: 16.15%;
 	border-left: solid 0.125em #c5c5c5;
 }
 .sec3__topRightTitle{
@@ -518,7 +510,6 @@ svg{
 	letter-spacing: 0.01em;
 	color: #1D1D1F;
 	margin-bottom: 0.56em;
-	padding-right: 7.15%;
 }
 .sec3__topRightText{
 	font-weight: 500;
@@ -526,7 +517,6 @@ svg{
 	line-height: 1.35; 
 	letter-spacing: 0.033em;
 	color: #4F4F4F;
-	padding-right: 30.15%;
 }
 .sec3__bottom{
 	display: flex;
@@ -560,7 +550,7 @@ svg{
 	padding-top: 3.75em;
 	padding-bottom: 3.7em;
 	padding-left: 3.95%;
-    padding-right: 14.6%;
+    padding-right: 15.3%;
 }
 .sec3__bottomRightTitle{
 	font-weight: 700;
@@ -581,7 +571,7 @@ svg{
 	color: #fff;
 	background: #000;
 	padding-top: 6.25em;
-	padding-bottom: 6.25em;
+	padding-bottom: 14.25em;
 }
 .sec4__top{
 	width: 100%;
@@ -599,10 +589,25 @@ svg{
 }
 .sec4__topImgWrap svg{
     position: absolute;
-    pointer-events: none;
     right: 1.5em;
     bottom: 1.5em;
     width: 2.625em;
+}
+.videoBlock svg{
+	transition: all 0.2s ease 0s;
+	will-change: transform;
+}
+.videoBlock svg:hover{
+	transform: scale(1.05);
+	 cursor: pointer;
+}
+.sec4__topImgWrap.videoBlock video{
+	width: 35.8125em;
+	height: 50.563em;
+}
+.videoBlock video{
+	object-fit: cover;
+    object-position: center;
 }
 .sec4__topImg{
 	width: 35.8125em;
@@ -629,21 +634,20 @@ svg{
 }
 .sec4__mid{
 	width: 100%;
-	max-width: 84.875em;
+	max-width: 64.875em;
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
-	padding-right: 0;
+	padding-right: 5em;
 	padding-bottom: 3em;
-	margin-left: 28em;
 }
 .sec4__midImg{
-	width: 56.625em;
+	width: 31.625em;
 	flex-shrink: 0;
 }
 .sec4__midContent{
-	padding-right: 5.2em;
+	padding-right: 4.5em;
 	padding-top: 0.1em;
 }
 .sec4__midTitle{
@@ -666,13 +670,12 @@ svg{
 }
 .sec4__bottom{
 	width: 100%;
-	max-width: 93.5em;
+	max-width: 81.25em;
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
-	padding-right: 0;
-	margin-left: 20em;
+	padding-right: 1.3125em;
 }
 .sec4__bottomImgWrap{
 	flex-shrink: 0;
@@ -692,7 +695,7 @@ svg{
 	letter-spacing: 0.03em;
 	color: #DCDCDC;
 	margin-bottom: 1.4em;
-	padding-right: 0;
+	padding-right: 5.1em;
 }
 .sec4__note{
 	color: #414141;
@@ -702,8 +705,8 @@ svg{
 	letter-spacing: 0.0174em;
 }
 .sec5{
-	padding-top: 6.25em;
-	padding-bottom: 6.25em;
+	padding-top: 6.45em;
+	padding-bottom: 11.5em;
 	width: 100%;
 	max-width: 82.25em;
 	margin: 0 auto;
@@ -758,34 +761,13 @@ svg{
 	align-items: flex-start;
 	padding-bottom: 3.75em;
 }
-.sec5__midTitle{
-	color: #000;
-	font-size: 2.25em;
-	font-style: normal;
-	font-weight: 700;
-	line-height: 1.225em;
-	margin-bottom: 0.455em;
-}
 .sec5__midImg{
 	width: 34.6875em;
 }
 .sec5__midImgWrap.videoBlock video{
 	width: 34.6875em;
-	height: 30em;
+	height: 30.875em;
 }
-@media(max-width:1000px){
-	.sec5__midImgWrap.videoBlock video{
-		width: 100%;
-		height: 12em;
-	}
-}
-@media(min-width:500px) and (max-width:1000px){
-	.sec5__midImgWrap.videoBlock video{
-		width: 100%;
-		height: 30em;
-	}
-}
-
 .sec5__midImgWrap, .sec5__bottomImgWrap{
 	position: relative;
 	flex-shrink: 0;
@@ -800,13 +782,6 @@ svg{
 	padding-left: 3.75em;
 	padding-top: 0.1em;
 	flex-grow: 1;
-}
-.sec5__midText a{
-	transition: all 0.2s ease 0s;
-	color: #CA8D33;
-}
-.sec5__midText a:hover{
-	color: #4f4f4f;
 }
 .sec5__midText{
 	font-weight: 500;
@@ -829,6 +804,34 @@ svg{
 	margin: 0 auto;
 	padding-left: 1.15em;
 }
+.sec5__bottomImgWrap{
+	flex-shrink: 0;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+.sec5__bottomImgWrap span{
+	font-size: 0.8125em;
+	font-weight: 500;
+	line-height: 1.77em;
+	letter-spacing: 0.0174em;
+	position: absolute;
+	left: -1.5em;
+	bottom: -2em;
+	transform-origin: top left;
+	transform: rotate(-90deg);
+}
+@media (max-width: 500px){
+	.sec5__bottomImgWrap span{
+		position: unset;
+		left: -1.5em;
+		bottom: -1em;
+		transform-origin: top left;
+		transform: rotate(0);
+		font-size: 0.5em;
+		margin-top: -2em;
+	}
+}
 .sec5__bottomImg{
 	flex-shrink: 0;
 	width: 34.6875em;
@@ -836,19 +839,6 @@ svg{
 .sec5__bottomImgWrap.videoBlock video{
 	width: 34.6875em;
 	height: 26.688em;
-}
-.sec5__bottomImgWrap-2{
-	position: relative;
-}
-.sec5__bottomImgWrap-2 svg{
-	    position: absolute;
-    right: 1.5em;
-    bottom: 1.5em;
-    width: 2.625em;
-}
-.sec5__bottomImgWrap-2.videoBlock video{
-	width: 34.6875em;
-	height: 38em;
 }
 .sec5__bottomContent{
 	padding-right: 3.75em;
@@ -864,18 +854,18 @@ svg{
 }
 .sec6{
 	padding-top: 6.25em;
-	padding-bottom: 6.25em;
+	padding-bottom: 4.375em;
 	background: #F5F5F7;
 }
 .sec6__top{
 	width: 100%;
-	max-width: 78.375em;
+	max-width: 95.375em;
 	display: flex;
-	justify-content: flex-start;
+	justify-content: space-between;
 	align-items: flex-start;
-	margin: 0 0 0 21em;
-	padding-left: 0;
-	padding-bottom: 3.6875em;
+	margin: 0 auto;
+	padding-left: 7.1em;
+	padding-bottom: 1.6875em;
 }
 .sec6__topLeft{
 	width: 35.8125em;
@@ -884,9 +874,6 @@ svg{
 .sec6__topLeft img{
 	width: 100%;
 	margin-bottom: 0.1em
-}
-.sec6__topLeft img:first-child{
-	margin-bottom: 1.875em;
 }
 .sec6__note{
 	color: #BABABA;
@@ -924,14 +911,6 @@ svg{
     margin-bottom: 1.3em;
     max-width: 26.7em;
 }
-.sec6__topSubTitle{
-	color: #1D1D1F;
-	font-size: 2.3125em;
-	font-style: normal;
-	font-weight: 700;
-	line-height: 1.19em;
-	margin-bottom: 0.5406em;
-}
 .sec6__mid{
 	width: 100%;
 	max-width: 95em;
@@ -940,37 +919,11 @@ svg{
 	justify-content: space-between;
 	align-items: flex-start;
 	padding-left: 10.5em;
-	padding-bottom: 0;
+	padding-bottom: 3.75em;
 }
 .sec6__midImg{
 	width: 49.25em;
 	flex-shrink: 0;
-}
-.sec5__bottomImgWrap-3{
-	position: relative;
-}
-.sec5__bottomImgWrap-3 svg{
-	position: absolute;
-    right: 1.5em;
-    bottom: 1.5em;
-    width: 2.625em;
-}
-.sec5__bottomImgWrap-3.videoBlock video{
-	width: 49.25em;
-	height: 33.313em;
-}
-.sec5__bottomImgWrap-4{
-	position: relative;
-}
-.sec5__bottomImgWrap-4 svg{
-	position: absolute;
-    right: 1.5em;
-    bottom: 1.5em;
-    width: 2.625em;
-}
-.sec5__bottomImgWrap-4.videoBlock video{
-	width: 43.938em;
-	height: 29.5em;
 }
 .sec6__midContent{
 	padding-right: 3.75em;
@@ -1024,7 +977,7 @@ svg{
 .sec7{
 	background: #000;
 	color: #fff;
-	padding-top: 6.25em;
+	padding-top: 6.5em;
 	padding-bottom: 6.25em;
 }
 .sec7__title{
@@ -1051,33 +1004,6 @@ svg{
 	width: 47.375em;
 	flex-shrink: 0;
 }
-.sec7__topRightImgWrap{
-	display: flex;
-	flex-direction: column;
-	position: relative;
-}
-.sec7__topRightImgWrap_tip{
-	color: #414141;
-	font-size: 0.815em;
-	font-style: normal;
-	font-weight: 500;
-	line-height: 1.3529em;
-	letter-spacing: 0.016941em;
-	position: absolute;
-	left: -1.5em;
-	bottom: -1em;
-	transform-origin: top left;
-	transform: rotate(-90deg);
-}
-@media(max-width:500px){
-	.sec7__topRightImgWrap_tip{
-		position: unset;
-		left: -1.5em;
-		bottom: -1em;
-		transform-origin: top left;
-		transform: rotate(0);
-	}
-}
 .sec7__topImg{
 	width: 100%;
 }
@@ -1090,7 +1016,6 @@ svg{
 }
 .sec7__topLeft{
 	padding-right: 3.75em;
-	margin-top: auto;
 }
 .sec7__topTitle{
 	font-weight: 700;
@@ -1121,19 +1046,13 @@ svg{
 	position: relative;
 	flex-shrink: 0;
 	width: 31.5625em;
-	padding-bottom: 40.5%;
 }
-.sec7__midLeft video{
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	left: 0;
-	top: 0;
-	position: absolute;
+.sec7__midLeft.videoBlock video{
+	width: 31.5625em;
+	height: 24.813em;
 }
 .sec7__midLeft svg{
 	position: absolute;
-	/*pointer-events: none;*/
 	right: 1.5em;
 	bottom: 1.5em;
 	width: 2.625em;
@@ -1199,7 +1118,7 @@ svg{
 	margin-bottom: 1.4em;
 }
 .sec8{
-	padding: 6.25em 0 6.25em;
+	padding: 6.4em 0 6.25em;
 }
 .sec8__title{
 	font-weight: 700;
@@ -1225,6 +1144,20 @@ svg{
 	flex-shrink: 0;
 	width: 43.9375em;
 }
+.sec8__topImgWrap{
+	position: relative;
+	width: 100%;
+}
+.sec8__topImgWrap svg{
+	position: absolute;
+	right: 1.5em;
+    bottom: 1.5em;
+    width: 2.625em;
+}
+.sec8__topImgWrap.videoBlock video{
+	width: 43.9375em;
+	height: 38.125em;
+}
 .sec8__topContent{
 	padding-right: 4.9em;
 	padding-top: 0.1em;
@@ -1243,7 +1176,6 @@ svg{
 }
 .sec8__bottomImgWrap svg{
 	position: absolute;
-    pointer-events: none;
     right: 1.5em;
     bottom: 1.5em;
     width: 2.625em;
@@ -1337,6 +1269,22 @@ svg{
 	flex-shrink: 0;
 	width: 34.6875em;
 }
+.sec8__bottomImgWrap.videoBlock video{
+	width: 34.6875em;
+	height: 28.125em;
+}
+@media(max-width:500px){
+	.sec8__bottomImgWrap.videoBlock video{
+		width: 100%;
+    height: 25em;
+	}
+}
+@media(max-width:1000px){
+	.sec8__bottomImgWrap.videoBlock video{
+		width: 100%;
+    height: 25em;
+	}
+}
 .sec8__bottomContent{
 	padding-left: 3.75em;
 	padding-top: 0.1em;
@@ -1358,7 +1306,7 @@ svg{
 }
 .sec9{
 	background: #F5F5F7;
-	padding: 6.25em 0 6.25em;
+	padding: 6.35em 0 6.25em;
 }
 .sec9__midImgWrap{
 	position: relative;
@@ -1366,7 +1314,6 @@ svg{
 }
 .sec9__midImgWrap svg{
 	position: absolute;
-    pointer-events: none;
     right: 1.5em;
     bottom: 1.5em;
     width: 2.625em;
@@ -1386,15 +1333,15 @@ svg{
 	line-height: 1.15;
 	letter-spacing: -0.02em;
 	color: #000000;
-	width: 7.6em;
+	width: 7em;
 }
 .sec9__text{
 	font-weight: 700;
 	font-size: 3.375em;
 	line-height: 1.15;
 	letter-spacing: -0.02em;
-	width: 16.255em;
-	color: #4F4F4F;
+	width: 16.7em;
+	color: #757479;
 }
 .sec9__img{
 	margin: 5em auto 0;
@@ -1415,6 +1362,10 @@ svg{
 .sec9__midImg {
     width: 34.6875em;
     flex-shrink: 0;
+}
+.sec9__midImgWrap.videoBlock video{
+	width: 34.6875em;
+	height: 28.125em;	
 }
 .sec9__midContent {
     padding-left: 3.9em;
@@ -1659,9 +1610,12 @@ svg{
 	flex-shrink: 0;
 	position: relative;
 }
+.sec11__content2Left.videoBlock video{
+	width: 34.6875em;
+	height: 24.813em;
+}
 .sec11__content2Left svg{
 	position: absolute;
-    pointer-events: none;
     right: 1.5em;
     bottom: 1.5em;
     width: 2.625em;
@@ -1764,6 +1718,25 @@ svg{
 .sec11__content5Left{
 	padding-right: 3.75em;
 	padding-top: 0.1em;
+}
+.sec11__content2Left span {
+	font-size: 0.8125em;
+	font-weight: 500;
+	line-height: 1.77em;
+	letter-spacing: 0.0174em;
+	position: absolute;
+	color: #414141;
+	left: -2.2em;
+	bottom: -2em;
+	transform-origin: top left;
+	transform: rotate(-90deg);
+}
+@media(max-width:1000px){
+	.sec11__content2Left span {
+		position: unset;
+		transform: rotate(0deg);
+		font-size: 0.5em;
+	}
 }
 .sec11__content5Text{
 	font-weight: 500;
@@ -2176,7 +2149,7 @@ svg{
 	}
 	.sec1__img{
 		width: 19.6875em;
-		height: 16.8125em;
+		height: 22.8125em;
 		object-fit: cover;
 	}
 	.sec1__content{
@@ -2240,7 +2213,6 @@ svg{
 		font-size: 1em;
 		line-height: 1.25;
 		letter-spacing: 0.025em;
-		padding-right: 0;
 	}
 	.sec3__topLeft{
 	    width: 47%;
@@ -2308,6 +2280,10 @@ svg{
 		object-fit: cover;
 		height: 26.8125em;
 	}
+	.sec4__topImgWrap.videoBlock video {
+		width: 15.875em;
+		height: 26.8125em;
+	}
 	.sec4__topContent{
 		padding-left: 1.6875em;
     	padding-top: 0.1875em;
@@ -2327,7 +2303,6 @@ svg{
 		flex-wrap: wrap;
 		padding: 0 5.3125em;
 		margin-bottom: 2.625em;
-		margin-left: 0;
 	}
 	.sec4__midContent{
 		padding: 0.0625em 0 0;
@@ -2343,12 +2318,11 @@ svg{
 		object-fit: cover;
 	    width: 100%;
 	    margin-top: 1.9375em;
-	    height: 22.5em;
+	    height: 13.5em;
 	}
 	.sec4__bottom{
 		flex-wrap: wrap-reverse;
 		padding: 0 5.3125em;
-		margin-left:0;
 	}
 	.sec4__bottomContent{
 		padding: 0 2.375em 0 0;
@@ -2365,9 +2339,6 @@ svg{
 	.sec5__midImgWrap, .sec5__bottomImgWrap {
 		width: 100%;
 		position: relative;
-	}
-	.sec5__bottomImgWrap{
-		margin-bottom: 0;
 	}
 	.sec5__title{
 		font-size: 2em;
@@ -2408,24 +2379,29 @@ svg{
 	}
 	.sec5__midImg{
 		width: 100%;
-		height: 27.5em;
+		height: 17.5em;
 		object-fit: cover; 
+	}
+	.sec5__midImgWrap.videoBlock video {
+		width: 100%;
+		height: 17.5em;
 	}
 	.sec5__midContent{
 		padding: 2.5625em 0 0;
 	}
 	.sec5__midText{
 		max-width: 100%;
-		font-size: 1em;
+		font-size:1em;
 		line-height: 1.25;
 		margin-bottom: 1.25em;
 	}
 	.sec5__bottom > img{
-		margin-bottom: 0;
+		margin-bottom: 2.5625em;
 	}
 	.sec5__bottom{
 		padding: 0;
 		flex-wrap: wrap-reverse;
+		row-gap: 2.5625em;
 	}
 	.sec5 .sec5__bottom:not(:last-child) {
 		padding-bottom: 0;
@@ -2440,12 +2416,8 @@ svg{
 		width: 100%;
 		height: 17.5em;
 	}
-	.sec5__bottomImgWrap-2.videoBlock video {
-		width: 100%;
-		height: 27.5em;
-	}
 	.sec5__bottomContent{
-		padding: 2.5625em 0 0;
+		padding: 0;
 	}
 	.sec5__bottomText{
 		font-size: 1em;
@@ -2457,7 +2429,6 @@ svg{
 	}
 	.sec6__top{
 		padding: 0 0 1.1875em;
-		margin: 0;
 	}
 	.sec6__topLeft{
 		width: 16.25em;
@@ -2491,16 +2462,6 @@ svg{
     	max-width: inherit;
     	margin-bottom: 1.25em;
 	}
-	.sec6__topText:nth-child(5){
-		margin-left: -18.0625em;
-    	max-width: inherit;
-    	margin-bottom: 1.25em;
-	}
-	.sec6__topText:nth-child(6){
-		margin-left: -18.0625em;
-    	max-width: inherit;
-    	margin-bottom: 1.25em;
-	}
 	.sec6__note {
 		font-size: 0.75em;
 	}
@@ -2510,20 +2471,10 @@ svg{
 	}
 	.sec6__midImg{
 		width: 100%;
-		height: 15.6875em;
+		height: 26.6875em;
 		object-fit: cover;
 		object-position: top;
 		margin-bottom: 2.625em;
-	}
-	.sec5__bottomImgWrap-3.videoBlock video {
-		width: 100%;
-		height: 27em;
-	}
-	.sec6__topSubTitle {
-		font-size: 2em;
-	}	
-	.sec6__topSubTitle br{
-		display: none;
 	}
 	.sec6__midContent{
 		padding: 0 0 0.875em;
@@ -2605,10 +2556,13 @@ svg{
 	}
 	.sec7__midLeft{
 		width: 100%;
-		padding-bottom: 100%;
 	}
 	.sec7__midImg{
 		object-fit: cover;
+		height: 13.6875em;
+	}
+	.sec7__midLeft.videoBlock video {
+		width: 100%;
 		height: 13.6875em;
 	}
 	.sec7__midLeft svg{
@@ -2668,9 +2622,9 @@ svg{
 		height: 23.125em;
 		object-fit: cover;
 	}
-	.sec5__bottomImgWrap-4.videoBlock video {
+	.sec8__topImgWrap.videoBlock video {
 		width: 100%;
-		height: 25em;
+		height: 23.125em;
 	}
 	.sec8__mid1{
 		flex-wrap: wrap-reverse;
@@ -2692,7 +2646,7 @@ svg{
 	}
 	.sec8__mid1Img{
 		width: 100%;
-		height: 28.5em;
+		height: 17.5em;
 		object-fit: cover;
 	}
 	.sec8__mid2{
@@ -2712,7 +2666,7 @@ svg{
 	}
 	.sec8__mid2Img{
 		width: 100%;
-		height: 19em;
+		height: 23em;
 		object-fit: cover;
 	}
 	.sec8__bottom{
@@ -2728,7 +2682,7 @@ svg{
 	.sec8__bottomImg{
 		width: 100%;
 		object-fit: cover;
-		height: 30.1875em;
+		height: 24.1875em;
 	}
 	.sec9{
 		padding: 4.0625em 5.3125em 3.75em;
@@ -2745,6 +2699,10 @@ svg{
 	}
 	.sec9__midImg{
 		width: 100%;
+	}
+	.sec9__midImgWrap.videoBlock video {
+		width: 100%;
+		height: 30em;
 	}
 	.sec9__midText{
 		padding-right: 0;
@@ -2769,6 +2727,7 @@ svg{
 		font-size: 2.375em;
 		line-height: 1.052;
 		letter-spacing: -0.029em;
+		text-align: left;
 	}
 	.sec9__img{
 	    margin: 3.125em auto 0; 
@@ -2918,6 +2877,10 @@ svg{
 	}
 	.sec11__content2img{
 		object-fit: cover;
+		height: 24.5625em;
+	}
+	.sec11__content2Left.videoBlock video {
+		width: 100%;
 		height: 24.5625em;
 	}
 	.sec11__content2Right{
@@ -3345,7 +3308,11 @@ svg{
 	}
 	.sec4__topImg{
 		width: 100%;
-		height: 20em;
+		height: 27.4375em;
+	}
+	.sec4__topImgWrap.videoBlock video {
+		width: 100%;
+		height: 27.4375em;
 	}
 	.sec4__topContent{
 		padding: 0 0 1.3125em;
@@ -3364,9 +3331,6 @@ svg{
 		padding: 0;
 		margin-bottom: 2em;
 	}
-	.sec4__midImg{
-			height: 13.5em;
-	}
 	.sec4__midTitle{
 		font-size: 1.75em;
 		line-height: 1.143;
@@ -3379,7 +3343,7 @@ svg{
 	}
 	.sec4__midImg{
 		margin-top: 0;
-		height: 10em;
+		height: 13.5em;
 	}
 	.sec4__bottom{
 		padding: 0;
@@ -3425,6 +3389,10 @@ svg{
 	.sec5__midImg{
 		height: 11.75em;
 	}
+	.sec5__midImgWrap.videoBlock video {
+		width: 100%;
+		height: 11.75em;
+	}
 	.sec5__midContent{
 		padding-top: 1.375em;
 	}
@@ -3435,13 +3403,6 @@ svg{
 	.sec5__bottomImg{
 		height: 13.75em;
 		margin-bottom: 1.3125em;
-	}
-	.sec5__bottomImgWrap-2.videoBlock video {
-		width: 100%;
-		height: 19.75em;
-	}
-	.sec5__bottomImgWrap-2 {
-			width: 100%;
 	}
 	.sec5__bottomImgWrap.videoBlock video {
 		width: 100%;
@@ -3466,9 +3427,6 @@ svg{
 		line-height: 1.143;
 		letter-spacing: -0.0357em;
 		margin-bottom: 0.572em;
-	}
-	.sec6__topSubTitle {
-		font-size: 1.4em;
 	}
 	.sec6__topSubtitle{
 		font-size: 1.125em;
@@ -3501,10 +3459,6 @@ svg{
 	.sec6__midImg{
 		height: 10.9375em;
 		margin-bottom: 1.3125em;
-	}
-	.sec5__bottomImgWrap-3.videoBlock video {
-		width: 100%;
-		height: 12em;
 	}
 	.sec6__midText{
 		font-size: 0.875em;
@@ -3585,7 +3539,7 @@ svg{
 	}
 	.sec7__bottomImg{
 		object-fit: cover;
-		height: 17.1875em;
+		height: 19.1875em;
 	}
 	.sec7__bottomNote{
 		font-size: 0.875em;
@@ -3617,9 +3571,9 @@ svg{
 	.sec8__topImg{
 		height: 10.9375em;
 	}
-	.sec5__bottomImgWrap-4.videoBlock video {
+	.sec8__topImgWrap.videoBlock video {
 		width: 100%;
-		height: 12em;
+		height: 10.9375em;
 	}
 	.sec8__mid1{
 		padding-bottom: 1.5em;
@@ -3668,7 +3622,7 @@ svg{
 		padding-bottom: 1.1835em;
 	}
 	.sec8__bottomImg{
-		height: 14.9375em;
+		height: 10.9375em;
 	}
 	.sec9{
 		padding: 2.125em 1.125em 2em;
@@ -3702,6 +3656,10 @@ svg{
 	}
 	.sec9__midImg {
 		margin-bottom: 1.25em;
+	}
+	.sec9__midImgWrap.videoBlock video {
+		width: 100%;
+		height: 14em;
 	}
 	.sec9__bottom {
 		padding-left: 0;
@@ -3817,6 +3775,10 @@ svg{
 		padding-bottom: 1.25em;
 	}
 	.sec11__content2img{
+		height: 13.125em;
+	}
+	.sec11__content2Left.videoBlock video {
+		width: 100%;
 		height: 13.125em;
 	}
 	.sec11__content2Text{
