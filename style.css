@@ -4004,3 +4004,21 @@ svg{
 
 
 
+.dark_bg {
+	background: #000 !important;
+}
+.dark_bg * {
+	color: #fff !important;
+}
+
+.gray_bg {
+	background: #F5F5F7 !important;
+}
+
+.gray_bg *:not(.sec11__title) {
+	color: #4f4f4f !important;
+}
+
+.gray_bg .sec11__title {
+	color: #000 !important;
+}
