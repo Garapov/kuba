@@ -726,7 +726,7 @@ svg{
 	width: 100%;
 	max-width: 75em;
 	margin: 0 auto;
-	padding-left: 3.9em;
+	/* padding-left: 3.9em; */
     padding-bottom: 3.75em;
 }
 .sec5__topImg{
@@ -753,7 +753,7 @@ svg{
 	letter-spacing: 0.025em;
 	color: #4f4f4f;
     margin-bottom: 1.75em;
-    max-width: 22.5em;
+    max-width: 25.5em;
 }
 .sec5__mid{
 	display: flex;
@@ -1601,7 +1601,7 @@ svg{
 	align-items: flex-start;
 	margin: 0 auto;
 	width: 100%;
-	max-width: 66em;
+	max-width: 90em;
 	padding-right: 1.65em;
     padding-bottom: 3.75em;
 }
